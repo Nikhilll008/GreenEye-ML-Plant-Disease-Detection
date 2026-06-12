@@ -1,0 +1,389 @@
+/* PredictionResult.css */
+.prediction-result {
+    background: rgb(183, 78, 78);
+    border-radius: 15px;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+.no-result {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.error-container {
+    background: #FFEBEE;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #F44336;
+}
+
+.error-container h3 {
+    color: #D32F2F;
+    margin-top: 0;
+}
+
+.error-details {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Header Styles */
+.prediction-header {
+    padding: 25px 30px;
+    color: white;
+    border-radius: 15px 15px 0 0;
+}
+
+.prediction-header.healthy {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+}
+
+.prediction-header.diseased {
+    background: linear-gradient(135deg, #FF9800, #F57C00);
+}
+
+.status-badge {
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.prediction-header h2 {
+    margin: 10px 0 5px 0;
+    font-size: 2.2rem;
+}
+
+.plant-name {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Confidence Section */
+.confidence-section {
+    padding: 25px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.confidence-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.confidence-meter {
+    height: 30px;
+    background: #F5F5F5;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.confidence-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    min-width: 60px;
+    transition: width 1s ease;
+}
+
+.confidence-text {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Disease Info */
+.disease-info-section {
+    padding: 25px 30px;
+    border-bottom: 1px solid #eee;
+    
+}
+
+.disease-info-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.info-item strong {
+    color: #2E7D32;
+    display: inline-block;
+    min-width: 140px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.info-card {
+    background: #F9F9F9;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #4CAF50;
+}
+
+.info-label {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.info-value.high {
+    color: #F44336;
+}
+
+.info-value.low {
+    color: #4CAF50;
+}
+
+/* Treatment Section */
+.treatment-section {
+    padding: 25px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.treatment-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.steps-container {
+    background: #F9FDF8;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #E8F5E9;
+}
+
+.step-item {
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #C8E6C9;
+}
+
+.step-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.step-number {
+    background: #4CAF50;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.step-text {
+    line-height: 1.6;
+    color: #333;
+}
+
+.prevention-tips {
+    margin-top: 25px;
+    padding: 20px;
+    background: #FFF3E0;
+    border-radius: 10px;
+    border-left: 4px solid #FF9800;
+}
+
+.prevention-tips h4 {
+    color: #EF6C00;
+    margin-top: 0;
+}
+
+/* Fertilizer Section */
+.fertilizer-section {
+    padding: 25px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.fertilizer-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.fertilizer-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.fertilizer-item {
+    display: flex;
+    align-items: center;
+    background: #E3F2FD;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid #BBDEFB;
+}
+
+.fertilizer-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.fertilizer-name {
+    font-weight: 500;
+    color: #1565C0;
+}
+
+.fertilizer-images {
+    margin-top: 25px;
+}
+
+.fertilizer-images h4 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.image-container {
+    background: #F5F5F5;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fertilizer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-note {
+    color: #666;
+    font-size: 0.85rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Next Steps */
+.next-steps-section {
+    padding: 25px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.next-steps-section h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.next-steps-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.next-steps-list li {
+    padding: 10px 0 10px 30px;
+    position: relative;
+    color: #333;
+    line-height: 1.6;
+}
+
+.next-steps-list li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Technical Details */
+.technical-details {
+    padding: 0 30px 25px;
+}
+
+.technical-details summary {
+    cursor: pointer;
+    color: #666;
+    font-weight: 600;
+    padding: 15px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.technical-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.technical-details summary:after {
+    content: "▼";
+    font-size: 0.8rem;
+    transition: transform 0.3s;
+}
+
+.technical-details[open] summary:after {
+    transform: rotate(180deg);
+}
+
+.details-content {
+    background: #F9F9F9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.details-content p {
+    margin: 8px 0;
+}
+
+.details-content ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}

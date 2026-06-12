@@ -1,0 +1,94 @@
+{
+    "bacterial_spot": {
+        "plant_name": "Tomato",
+        "disease_name": "Bacterial Spot",
+        "scientific_name": "Xanthomonas campestris pv. vesicatoria",
+        "symptoms": "Small, dark, water-soaked spots on leaves that become angular, yellow halos around spots, spots may merge",
+        "treatment": [
+            "Remove infected leaves and plants immediately",
+            "Apply copper-based bactericides weekly",
+            "Water at soil level (avoid overhead irrigation)",
+            "Rotate crops with non-solanaceous plants for 2-3 years",
+            "Use disease-free certified seeds"
+        ],
+        "fertilizers": [
+            "Copper hydroxide spray (Kocide 3000)",
+            "Streptomycin sulfate (Agri-Strep)",
+            "Bacillus subtilis (Serenade ASO)"
+        ],
+        "fertilizer_images": [
+            "/fertilizers/copper_fungicide.jpg",
+            "/fertilizers/streptomycin.jpg"
+        ],
+        "prevention": "Use resistant varieties, proper spacing, avoid working with wet plants"
+    },
+    
+    "early_blight": {
+        "plant_name": "Tomato",
+        "disease_name": "Early Blight",
+        "scientific_name": "Alternaria solani",
+        "symptoms": "Dark brown spots with concentric rings (target-like), yellowing leaves, starts on lower leaves",
+        "treatment": [
+            "Apply chlorothalonil or mancozeb fungicides every 7-10 days",
+            "Remove lower infected leaves regularly",
+            "Apply mulch to prevent soil splash",
+            "Improve air circulation through proper spacing",
+            "Apply neem oil as organic alternative"
+        ],
+        "fertilizers": [
+            "Chlorothalonil (Daconil)",
+            "Mancozeb (Manzate)",
+            "Copper fungicide (Bonide)"
+        ],
+        "fertilizer_images": [
+            "/fertilizers/chlorothalonil.jpg",
+            "/fertilizers/mancozeb.jpg"
+        ],
+        "prevention": "Rotate crops annually, remove plant debris, avoid overhead watering"
+    },
+    
+    "late_blight": {
+        "plant_name": "Tomato",
+        "disease_name": "Late Blight",
+        "scientific_name": "Phytophthora infestans",
+        "symptoms": "Water-soaked gray-green spots, white fungal growth on underside in humidity, rapid plant collapse",
+        "treatment": [
+            "Destroy infected plants immediately (do not compost)",
+            "Apply fungicides containing chlorothalonil or mancozeb",
+            "Remove volunteer tomato and potato plants nearby",
+            "Water early morning so leaves dry quickly",
+            "Use resistant varieties if available"
+        ],
+        "fertilizers": [
+            "Chlorothalonil (Bravo Weather Stik)",
+            "Mancozeb (Penncozeb)",
+            "Fosetyl-Al (Aliette)"
+        ],
+        "fertilizer_images": [
+            "/fertilizers/lateblight_fungicide.jpg"
+        ],
+        "prevention": "Use certified disease-free transplants, monitor weather for blight forecasts"
+    },
+    
+    "healthy": {
+        "plant_name": "Tomato",
+        "disease_name": "Healthy",
+        "symptoms": "Green, vibrant leaves, no spots or discoloration, normal growth pattern",
+        "care_tips": [
+            "Continue regular watering (1-2 inches per week)",
+            "Apply balanced fertilizer (10-10-10) every 4-6 weeks",
+            "Prune lower leaves for better air circulation",
+            "Monitor for pests weekly",
+            "Stake plants for better support"
+        ],
+        "fertilizers": [
+            "Balanced NPK fertilizer (10-10-10)",
+            "Compost tea for organic nutrition",
+            "Calcium nitrate to prevent blossom end rot"
+        ],
+        "fertilizer_images": [
+            "/fertilizers/npk_fertilizer.jpg",
+            "/fertilizers/compost_tea.jpg"
+        ]
+    }
+}
